@@ -26,21 +26,21 @@ if (isset($_POST['settings'])) {
 		$dir = 'urls_'.uniqid();
 	}
 	mkdir($dir);
-	if ($urls = fopen('https://raw.githubusercontent.com/micahbaumann/URLS/main/scr/urls.php', 'r')) { 
+	if ($urls = fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/scr/urls.php', 'r')) { 
 		file_put_contents($dir.'/urls.php', $urls);
 		fclose($urls);
 	} else {
 		die('Error creating "urls.php" file.');
 	}
 
-	if ($update = fopen('https://raw.githubusercontent.com/micahbaumann/URLS/main/scr/update.php', 'r')) { 
+	if ($update = fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/scr/update.php', 'r')) { 
 		file_put_contents($dir.'/update.php', $update);
 		fclose($update);
 	} else {
 		die('Error creating "update.php" file.');
 	}
 
-	if ($license = fopen('https://raw.githubusercontent.com/micahbaumann/URLS/main/scr/update.php', 'r')) { 
+	if ($license = fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/scr/update.php', 'r')) { 
 		file_put_contents($dir.'/LICENSE', $license);
 		fclose($license);
 	} else {
@@ -48,7 +48,7 @@ if (isset($_POST['settings'])) {
 	}
 
 	$settingsFile = fopen($settings, 'w');
-	fwrite($settingsFile, "<?php\n/*\nURLS framework url config file.\n\nAdd your paths here:\nex. path('blog/', 'blog-home.php');\n*/\ninclude '".$dir."/urls.php';\n\$BASE_URL = ".$base.";\n\n\nurls_404();\n\n?>\n");
+	fwrite($settingsFile, "<?php\n/*\nURLS framework url config file.\n\nAdd your paths here:\nex. urls_path('blog/', 'blog-home.php');\n*/\ninclude '".$dir."/urls.php';\n\$BASE_URL = ".$base.";\n\n\nurls_404();\n\n?>\n");
 	fclose($settingsFile);
 	echo 'done';
 	if ($delete == 'true') {
