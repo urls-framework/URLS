@@ -10,7 +10,7 @@ Currently, version 1.0 is the most recent and up to date version of the URLS fra
 
 ## Reporting a Vulnerability
 
-If you do find a security vulnerability, please **DO NOT** report it using the [issue tracker](https://github.com/micahbaumann/URLS/issues). Please report it privately to us by sending the issue to [urlsframework@gmail.com](mailto:urlsframework@gmail.com).
+If you do find a security vulnerability, please **DO NOT** report it using the [issue tracker](https://github.com/urls-framework/URLS/issues). Please report it privately to us by sending the issue to [urlsframework@gmail.com](mailto:urlsframework@gmail.com).
 
 ## Current Vulnerabilities
 Nothing to report so far! :)
