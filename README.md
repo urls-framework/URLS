@@ -75,6 +75,9 @@ For a more complete example see [guides/INSTALL.md](https://github.com/urls-fram
 
 For more examples see [GUIDES](https://github.com/urls-framework/URLS/blob/main/GUIDES.md)
 
+## Documentation
+The documentation for the URLS Framework can be found at the [DOCS.md](https://github.com/urls-framework/URLS/blob/main/DOCS.md) file.
+
 ## License
 This software is distributed under the Apache 2.0 license. For more information, read the [LICENSE](https://github.com/urls-framework/urls/blob/main/LICENSE) file.
 
