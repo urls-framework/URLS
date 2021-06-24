@@ -1,0 +1,12 @@
+/.gitattributes export-ignore
+/scr export-ignore
+/.gitignore export-ignore
+/README.md export-ignore
+/SECURITY.md export-ignore
+/GUIDES.md export-ignore
+/examples export-ignore
+/guides export-ignore
+/examples export-ignore
+/changelog.md export-ignore
+/docs export-ignore
+/DOCS.md export-ignore
