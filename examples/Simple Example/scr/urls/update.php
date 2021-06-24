@@ -17,16 +17,23 @@ limitations under the License.
 
 function urls_update() {
 	if (isset($GLOBALS['BASE_URL']) && isset($GLOBALS['URLS_SETTINGS'])) {
-		if ($urls = @fopen('https://raw.githubusercontent.com/micahbaumann/URLS/main/scr/urls.php', 'r')) { 
-			file_put_contents('urls/urls.php', $urls);
+		if ($urls = @fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/scr/urls.php', 'r')) { 
+			file_put_contents(basename(__DIR__).'/urls.php', $urls);
 			fclose($urls);
 		} else {
 			return false;
 		}
 
-		if ($update = @fopen('https://raw.githubusercontent.com/micahbaumann/URLS/main/scr/update.php', 'r')) { 
-			file_put_contents('urls/update.php', $update);
+		if ($update = @fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/scr/update.php', 'r')) { 
+			file_put_contents(basename(__DIR__).'/update.php', $update);
 			fclose($update);
+		} else {
+			return false;
+		}
+
+		if ($licence = @fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/LICENSE', 'r')) { 
+			file_put_contents(basename(__DIR__).'/LICENSE', $licence);
+			fclose($licence);
 		} else {
 			return false;
 		}
