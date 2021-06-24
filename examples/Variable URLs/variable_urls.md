@@ -48,7 +48,7 @@ Variables URLs are similar to query strings except the query part is part of the
    ?>
    ```
 5. If you did not specify a base url, go to `http://yourdomain.com/blog/1/`. If you did specify a base url, go to `http://yourdomain.com/<your base url>/blog/1/`. You should see the contents of the the `posts.php` file with the post title and content of the specified post filled in.
-![Output](https://github.com/micahbaumann/URLS/blob/main/examples/Variable%20URLs/example2.png?raw=true)
+![Output](https://github.com/urls-framework/URLS/blob/main/examples/Variable%20URLs/example2.png?raw=true)
 
 ## Explaination
 ```PHP
@@ -101,5 +101,5 @@ You should recognize this file. The main difference from paths with regular urls
 ### The `$_ACCESS` Variable
 The access variable is similar to the `$_POST` and `$_GET` variables. It is an array that holds all variables from a variable url.
 
-For more examples see [GUIDES](https://github.com/micahbaumann/URLS/blob/main/GUIDES.md).  
-The source code for this example is at [https://github.com/micahbaumann/URLS/tree/main/examples/Variable%20URLs/scr](https://github.com/micahbaumann/URLS/tree/main/examples/Variable%20URLs/scr).
+For more examples see [GUIDES](https://github.com/urls-framework/URLS/blob/main/GUIDES.md).  
+The source code for this example is at [https://github.com/urls-framework/URLS/tree/main/examples/Variable%20URLs/scr](https://github.com/urls-framework/URLS/tree/main/examples/Variable%20URLs/scr).
