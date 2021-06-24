@@ -11,7 +11,7 @@ It is nearly imposible to make URLs look nice in PHP. URLS is a micro framework 
 * Custom HTTP Error Pages
 
 ## Requirements
-* Latest Version of PHP. Although URLS has only been tested on PHP 8, it should still work on PHP 7 and possibly 5.
+* Latest Version of PHP. Although URLS has only been tested on PHP 8, but it should still work on PHP 7 and possibly 5.
 * Server running Apache with mod_rewrite. URLS uses `.htaccess` so it will not work on a Nginx server. However, we are working on a Nginx version.
 
 ## Installation
