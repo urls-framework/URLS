@@ -1,4 +1,4 @@
-![Output](https://github.com/micahbaumann/URLS/blob/main/examples/static/logo.png?raw=true)
+![Output](https://github.com/urls-framework/URLS/blob/main/examples/static/logo.png?raw=true)
 # URLS Framework - Take control of the address bar!
 
 ## Why do you need it?
