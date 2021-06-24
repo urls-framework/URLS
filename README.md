@@ -18,10 +18,10 @@ It is nearly imposible to make URLs look nice in PHP. URLS is a micro framework 
 1. Open the `urls_welcome.php` in your browser.
 2. Fill out the required fields.
 3. Start makeking your urls!
-For a more complete example see [guides/INSTALL.md](https://github.com/micahbaumann/URLS/blob/main/guides/INSTALL.md).
+For a more complete example see [guides/INSTALL.md](https://github.com/urls-framework/URLS/blob/main/guides/INSTALL.md).
 
 ## Simple example
-1. Install the URLS framework (see [this guide](https://github.com/micahbaumann/URLS/blob/main/guides/INSTALL.md)).
+1. Install the URLS framework (see [this guide](https://github.com/urls-framework/URLS/blob/main/guides/INSTALL.md)).
 2. Create a new file named `blog-home.php` and fill it with:
    ```HTML
    <!DOCTYPE html>
@@ -71,15 +71,15 @@ For a more complete example see [guides/INSTALL.md](https://github.com/micahbaum
    ?>
    ```
 5. If you did not specify a base url, go to `http://yourdomain.com/blog/`. If you did specify a base url, go to `http://yourdomain.com/<your base url>/blog/`. You should see the contents of the the `blog-home.php` file.
-![Output](https://github.com/micahbaumann/URLS/blob/main/examples/Simple%20Example/example1.png?raw=true)
+![Output](https://github.com/urls-framework/URLS/blob/main/examples/Simple%20Example/example1.png?raw=true)
 
-For more examples see [GUIDES](https://github.com/micahbaumann/URLS/blob/main/GUIDES.md)
+For more examples see [GUIDES](https://github.com/urls-framework/URLS/blob/main/GUIDES.md)
 
 ## License
-This software is distributed under the Apache 2.0 license. For more information, read the [LICENSE](https://github.com/micahbaumann/urls/blob/main/LICENSE) file.
+This software is distributed under the Apache 2.0 license. For more information, read the [LICENSE](https://github.com/urls-framework/urls/blob/main/LICENSE) file.
 
 ## Contributing
-Currently, the URLS framework is a privately maintained project. If you find any bugs or have any suggestions, please submit them to the [issue tracker](https://github.com/micahbaumann/URLS/issues).
+Currently, the URLS framework is a privately maintained project. If you find any bugs or have any suggestions, please submit them to the [issue tracker](https://github.com/urls-framework/URLS/issues).
 
 ## Issues
-If you find any bugs, please report them to the [issue tracker](https://github.com/micahbaumann/URLS/issues). If you find a major security vulnerability, please **DO NOT** use the issue tracker to report them. See the [SECURITY](https://github.com/micahbaumann/URLS/blob/main/SECURITY.md) file for more information.
+If you find any bugs, please report them to the [issue tracker](https://github.com/urls-framework/URLS/issues). If you find a major security vulnerability, please **DO NOT** use the issue tracker to report them. See the [SECURITY](https://github.com/urls-framework/URLS/blob/main/SECURITY.md) file for more information.
