@@ -1,5 +1,5 @@
 # Examples - Simple Example
-1. Install the URLS framework (see [this guide](https://github.com/micahbaumann/URLS/blob/main/guides/INSTALL.md)).
+1. Install the URLS framework (see [this guide](https://github.com/urls-framework/URLS/blob/main/guides/INSTALL.md)).
 2. Create a new file named `blog-home.php` and fill it with:
    ```HTML
    <!DOCTYPE html>
@@ -49,7 +49,7 @@
    ?>
    ```
 5. If you did not specify a base url, go to `http://yourdomain.com/blog/`. If you did specify a base url, go to `http://yourdomain.com/<your base url>/blog/`. You should see the contents of the the `blog-home.php` file.
-![Output](https://github.com/micahbaumann/URLS/blob/main/examples/Simple%20Example/example1.png?raw=true)
+![Output](https://github.com/urls-framework/URLS/blob/main/examples/Simple%20Example/example1.png?raw=true)
 
-For more examples see [GUIDES](https://github.com/micahbaumann/URLS/blob/main/GUIDES.md).  
-The source code for this example is at [https://github.com/micahbaumann/URLS/tree/main/examples/Simple%20Example/scr](https://github.com/micahbaumann/URLS/tree/main/examples/Simple%20Example/scr).
+For more examples see [GUIDES](https://github.com/urls-framework/URLS/blob/main/GUIDES.md).  
+The source code for this example is at [https://github.com/urls-framework/URLS/tree/main/examples/Simple%20Example/scr](https://github.com/urls-framework/URLS/tree/main/examples/Simple%20Example/scr).
