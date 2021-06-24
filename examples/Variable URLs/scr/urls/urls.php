@@ -20,6 +20,7 @@ $_ACCESS = array();
 $URLS_DEBUG = false;
 $URLS_AUTO_UPDATE = true;
 $URLS_VERSION = '1.0';
+$URLS_VARS = array();
 // $TRAILING_SLASH = true;
 // $TRAILING_SLASH_STRICT = false;
 $URLS_ERROR_TEMPLATES = array(
@@ -129,7 +130,7 @@ function urls_error($doc=null, $str=null, $error=array(), $template="other", $co
 
 function urls_path($path, $file, $vars=null) {
 	// Update
-	if ($version = @fopen("https://raw.githubusercontent.com/micahbaumann/URLS/main/scr/version.txt", "r")) {
+	if ($version = @fopen("https://raw.githubusercontent.com/urls-framework/URLS/main/scr/version.txt", "r")) {
 		$versionRaw = fread($version, 10);
 		fclose($version);
 		preg_match_all('/([^.]*).?/', $versionRaw, $verMatches, PREG_SET_ORDER, 0);
@@ -145,6 +146,11 @@ function urls_path($path, $file, $vars=null) {
 		if ($GLOBALS['URLS_AUTO_UPDATE'] && ($curVersion[0] == $ver[0] && $curVersion[1] != $ver[1])) {
 			urls_update();
 		}
+	}
+
+	// vars
+	if ($vars != null) {
+		$URLS_VARS = $vars;
 	}
 
 
