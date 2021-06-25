@@ -16,7 +16,7 @@ limitations under the License.
 */
 
 function urls_update() {
-	if (isset($GLOBALS['BASE_URL']) && isset($GLOBALS['URLS_SETTINGS'])) {
+	if (isset($GLOBALS['BASE_URL'])/* && isset($GLOBALS['URLS_SETTINGS'])*/) {
 		if ($urls = @fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/scr/urls.php', 'r')) { 
 			file_put_contents(basename(__DIR__).'/urls.php', $urls);
 			fclose($urls);
