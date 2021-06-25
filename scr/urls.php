@@ -183,7 +183,7 @@ function urls_path($path, $file, $vars=null) {
 				$_ACCESS[substr($dir[$i], 1, strlen($dir[$i]) - 2)] = urldecode($uri[$i]);
 				continue;
 			}
-			if (!isset($dir[$i]) || !isset($uri[$i]) || $dir[$i] != $uri[$i]) {
+			if (!isset($dir[$i]) || !isset($uri[$i]) || $dir[$i] != urldecode($uri[$i])) {
 				$_ACCESS = array();
 				$include = false;
 				break;
