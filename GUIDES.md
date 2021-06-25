@@ -5,3 +5,4 @@
 
 ## Examples
 * [Simple Example](https://github.com/urls-framework/URLS/blob/main/examples/Simple%20Example/SIMPLE_EXAMPLE.md)
+* [Variable URLs](https://github.com/urls-framework/URLS/blob/main/examples/Variable%20URLs/variable_urls.md)
