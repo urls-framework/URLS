@@ -75,6 +75,9 @@ For a more complete example see [guides/INSTALL.md](https://github.com/urls-fram
 
 For more examples see [GUIDES](https://github.com/urls-framework/URLS/blob/main/GUIDES.md)
 
+## Wiki
+The wiki for URLS can be found at [https://github.com/urls-framework/URLS/wiki](https://github.com/urls-framework/URLS/wiki)
+
 ## Documentation
 The documentation for the URLS Framework can be found at the [DOCS.md](https://github.com/urls-framework/URLS/blob/main/DOCS.md) file.
 
