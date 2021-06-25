@@ -6,7 +6,6 @@
    <?php
    include '(the urls.php file)';
    $BASE_URL = '(the directory this is installed in)';
-   $URLS_SETTINGS = '(the name of this file)';
    
    urls_404();
     ?>
@@ -25,6 +24,7 @@
    RewriteCond %{REQUEST_FILENAME} !-f
    RewriteCond %{REQUEST_FILENAME} !-d
    RewriteRule . (the base directory followed by the settings file name) [L]
+   RewriteRule ^$ (the base directory followed by the settings file name) [L]
    # --URLS END--
    ```
    Here is a complete example:
@@ -41,6 +41,7 @@
    RewriteCond %{REQUEST_FILENAME} !-f
    RewriteCond %{REQUEST_FILENAME} !-d
    RewriteRule . /blog/setting.php [L]
+   RewriteRule ^$ /blog/settings.php [L]
    # --URLS END--
    ```
 4. Start building your URLs!
