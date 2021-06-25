@@ -1,6 +1,6 @@
 # Examples - Variable URLs Example
 Variables URLs are similar to query strings except the query part is part of the url.
-**\*Note:** This example assumes that you already have URLS installed.
+**Note:** This example assumes that you already have URLS installed.
 1. Create a new file named `posts.php` and fill it with:
    ```PHP
    <?php
