@@ -180,7 +180,7 @@ function urls_path($path, $file, $vars=null) {
 		}
 		for ($i=0; $i < max(count($uri), count($dir)); $i++) { 
 			if (isset($dir[$i]) && str_contains($dir[$i], '<')) {
-				$_ACCESS[urldecode(substr($dir[$i], 1, strlen($dir[$i]) - 2))] = urldecode($uri[$i]);
+				$_ACCESS[substr($dir[$i], 1, strlen($dir[$i]) - 2)] = urldecode($uri[$i]);
 				continue;
 			}
 			if (!isset($dir[$i]) || !isset($uri[$i]) || $dir[$i] != $uri[$i]) {
