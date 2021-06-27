@@ -19,7 +19,7 @@ It is nearly imposible to make URLs look nice in pure PHP. URLS is a micro frame
 2. Fill out the required fields.
 3. Start making your urls!  
   
-For a more complete example see [guides/INSTALL.md](https://github.com/urls-framework/URLS/blob/main/guides/INSTALL.md).
+For a more complete example, see [guides/INSTALL.md](https://github.com/urls-framework/URLS/blob/main/guides/INSTALL.md).
 
 ## Simple example
 1. Install the URLS framework (see [this guide](https://github.com/urls-framework/URLS/blob/main/guides/INSTALL.md)).
