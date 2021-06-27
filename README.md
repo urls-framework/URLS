@@ -6,7 +6,7 @@ It is nearly imposible to make URLs look nice in pure PHP. URLS is a micro frame
 
 ## Features
 * Automatic Updates - URLS automatically checks for updates everytime it is called so you never need to worry about updates! However, you will have to manualy install any major updates or updates that change how the ui works.
-* Easy to Use - URLS works similar to the URL routing system of Django!
+* Easy to Use - URLS ui is similar to the URL routing system of Django!
 * Simple Setup - Just open the `urls_welcome.php` page in your browser and follow the simple instructions.
 * Custom HTTP Error Pages
 
