@@ -2,7 +2,7 @@
 # URLS Framework - Take control of the address bar!
 
 ## Why do you need it?
-It is nearly imposible to make URLs look nice in PHP. URLS is a micro framework that takes ugly URLs and allows you to rewrite it any way you want. That means you can turn this URL, `https://examplesite.com/blog/home.php?post=1` into, `https://examplesite.com/blog/post/1/` with no `.htaccess` at all!
+It is nearly imposible to make URLs look nice in pure PHP. URLS is a micro framework that takes ugly URLs and allows you to rewrite it any way you want. That means you can turn this URL, `https://examplesite.com/blog/home.php?post=1` into, `https://examplesite.com/blog/post/1/` with no `.htaccess` at all!
 
 ## Features
 * Automatic Updates - URLS automatically checks for updates everytime it is called so you never need to worry about updates! However, you will have to manualy install any major updates or updates that change how the ui works.
