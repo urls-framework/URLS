@@ -1,6 +1,5 @@
 ![Output](https://github.com/urls-framework/URLS/blob/main/examples/static/logo.png?raw=true)
 # URLS Framework - Take control of the address bar!
-[![Test status](https://github.com/urls-framework/URLS/workflows/Tests/badge.svg)](https://github.com/urls-framework/URLS/actions)
 
 ## Why do you need it?
 It is nearly imposible to make URLs look nice in pure PHP. URLS is a micro framework that takes ugly URLs and allows you to rewrite it any way you want. That means you can turn this URL, `https://examplesite.com/blog/home.php?post=1` into, `https://examplesite.com/blog/post/1/` with no `.htaccess` at all!
