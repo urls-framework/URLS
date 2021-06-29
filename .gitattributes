@@ -1,5 +1,5 @@
 /.gitattributes export-ignore
-/scr export-ignore
+/src export-ignore
 /.gitignore export-ignore
 /README.md export-ignore
 /SECURITY.md export-ignore
