@@ -17,14 +17,14 @@ limitations under the License.
 
 function urls_update() {
 	if (isset($GLOBALS['BASE_URL'])/* && isset($GLOBALS['URLS_SETTINGS'])*/) {
-		if ($urls = @fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/scr/urls.php', 'r')) { 
+		if ($urls = @fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/src/urls.php', 'r')) { 
 			file_put_contents(basename(__DIR__).'/urls.php', $urls);
 			fclose($urls);
 		} else {
 			return false;
 		}
 
-		if ($update = @fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/scr/update.php', 'r')) { 
+		if ($update = @fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/src/update.php', 'r')) { 
 			file_put_contents(basename(__DIR__).'/update.php', $update);
 			fclose($update);
 		} else {
