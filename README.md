@@ -89,4 +89,6 @@ This software is distributed under the Apache 2.0 license. For more information,
 Currently, the URLS framework is a privately maintained project. If you find any bugs or have any suggestions, please submit them to the [issue tracker](https://github.com/urls-framework/URLS/issues). If you would like to edit the wiki, feel free to. However, we do ask that you follow our guidelines on how to post. See the [Contributing](https://github.com/urls-framework/URLS/wiki/Contributing) page in the wiki for more information
 
 ## Issues
-If you find any bugs, please report them to the [issue tracker](https://github.com/urls-framework/URLS/issues). If you find a major security vulnerability, please **DO NOT** use the issue tracker to report them. See the [SECURITY](https://github.com/urls-framework/URLS/blob/main/SECURITY.md) file for more information.
+If you find any bugs, please report them to the [issue tracker](https://github.com/urls-framework/URLS/issues). If you find a major security vulnerability, please **DO NOT** use the issue tracker to report them. See the [SECURITY](https://github.com/urls-framework/URLS/blob/main/SECURITY.md) file for more information.  
+  
+Copyright &copy; 2021 Micah Baumann
