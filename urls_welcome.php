@@ -31,21 +31,21 @@ if (isset($_POST['settings'])) {
 		$dir = 'urls_'.uniqid();
 	}
 	mkdir($dir);
-	if ($urls = fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/scr/urls.php', 'r')) { 
+	if ($urls = fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/src/urls.php', 'r')) { 
 		file_put_contents($dir.'/urls.php', $urls);
 		fclose($urls);
 	} else {
 		die('Error creating "urls.php" file.');
 	}
 
-	if ($update = fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/scr/update.php', 'r')) { 
+	if ($update = fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/src/update.php', 'r')) { 
 		file_put_contents($dir.'/update.php', $update);
 		fclose($update);
 	} else {
 		die('Error creating "update.php" file.');
 	}
 
-	if ($license = fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/scr/update.php', 'r')) { 
+	if ($license = fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/src/update.php', 'r')) { 
 		file_put_contents($dir.'/LICENSE', $license);
 		fclose($license);
 	} else {
