@@ -130,7 +130,7 @@ function urls_error($doc=null, $str=null, $error=array(), $template="other", $co
 
 function urls_path($path, $file, $vars=null) {
 	// Update
-	if ($version = @fopen("https://raw.githubusercontent.com/urls-framework/URLS/main/src/version.txt", "r")) {
+	if ($version = @fopen("https://raw.githubusercontent.com/urls-framework/URLS/main/src/version.txt?".mt_rand(), "r")) {
 		$versionRaw = fread($version, 10);
 		fclose($version);
 		preg_match_all('/([^.]*).?/', $versionRaw, $verMatches, PREG_SET_ORDER, 0);
