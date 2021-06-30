@@ -91,4 +91,5 @@ Currently, the URLS framework is a privately maintained project. If you find any
 ## Issues
 If you find any bugs, please report them to the [issue tracker](https://github.com/urls-framework/URLS/issues). If you find a major security vulnerability, please **DO NOT** use the issue tracker to report them. See the [SECURITY](https://github.com/urls-framework/URLS/blob/main/SECURITY.md) file for more information.  
   
+  
 Copyright &copy; 2021 Micah Baumann
