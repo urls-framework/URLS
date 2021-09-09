@@ -5,10 +5,10 @@
 It is nearly imposible to make URLs look nice in pure PHP. URLS is a micro framework that takes ugly URLs and allows you to rewrite it any way you want. That means you can turn this URL, `https://examplesite.com/blog/home.php?post=1` into, `https://examplesite.com/blog/post/1/` with no `.htaccess` at all!
 
 ## Features
-* Automatic Updates - URLS automatically checks for updates everytime it is called so you never need to worry about updates! However, you will have to manualy install any major updates or updates that change how the ui works.
+* Automatic Updates - URLS automatically checks for updates everytime it is called so you never need to worry about updates! However, you will have to manualy install any major updates or updates that change how the UI works. It is recomended you disable this feature for produciton.
 * Easy to Use - URLS UI is similar to the URL routing system of Django!
 * Simple Setup - Just open the `urls_welcome.php` page in your browser and follow the simple instructions.
-* Custom HTTP Error Pages
+* Custom HTTP Error Pages.
 
 ## Requirements
 * Latest Version of PHP. Although URLS has only been tested on PHP 8, but it should still work on PHP 7 and possibly 5.
@@ -22,6 +22,7 @@ It is nearly imposible to make URLs look nice in pure PHP. URLS is a micro frame
 For a more complete example, see [guides/INSTALL.md](https://github.com/urls-framework/URLS/blob/main/guides/INSTALL.md).
 
 ## Simple example
+Note: this setup is fine for development, but not for production.
 1. Install the URLS framework (see [this guide](https://github.com/urls-framework/URLS/blob/main/guides/INSTALL.md)).
 2. Create a new file named `blog-home.php` and fill it with:
    ```HTML
