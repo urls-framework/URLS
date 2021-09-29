@@ -19,7 +19,7 @@ limitations under the License.
 $_ACCESS = array();
 $URLS_DEBUG = false;
 $URLS_AUTO_UPDATE = true;
-$URLS_VERSION = '1.1';
+$URLS_VERSION = '1.2';
 $URLS_VARS = array();
 // $TRAILING_SLASH = true;
 // $TRAILING_SLASH_STRICT = false;
@@ -130,6 +130,7 @@ function urls_error($doc=null, $str=null, $error=array(), $template="other", $co
 
 function urls_path($path, $file, $vars=null) {
 	// Update
+
 	if ($version = @fopen("https://raw.githubusercontent.com/urls-framework/URLS/main/src/version.txt?".mt_rand(), "r")) {
 		$versionRaw = fread($version, 10);
 		fclose($version);
@@ -180,7 +181,12 @@ function urls_path($path, $file, $vars=null) {
 		}
 		for ($i=0; $i < max(count($uri), count($dir)); $i++) { 
 			if (isset($dir[$i]) && str_contains($dir[$i], '<')) {
-				$_ACCESS[substr($dir[$i], 1, strlen($dir[$i]) - 2)] = urldecode($uri[$i]);
+				if (isset($uri[$i])) {
+					$access = urldecode($uri[$i]);
+				} else {
+					$access = null;
+				}
+				$_ACCESS[substr($dir[$i], 1, strlen($dir[$i]) - 2)] = $access;
 				continue;
 			}
 			if (!isset($dir[$i]) || !isset($uri[$i]) || $dir[$i] != $uri[$i]) {
@@ -227,3 +233,4 @@ function urls_path($path, $file, $vars=null) {
 
 
 ?>
+
