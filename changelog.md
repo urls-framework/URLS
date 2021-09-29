@@ -5,4 +5,4 @@
 * Fixed typo in git repository structure.
 * Fixed typo in `urls.php` and `update.php` files.
 ## Version 1.1.2 - 6/30/21
-* Fixed bug where if a variable url is empty, an error occurs.
+* Fixed bug where if a variable URL is not set, an error will occur.
