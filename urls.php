@@ -34,6 +34,8 @@ $URLS_ERROR_TEMPLATES = array(
 
 );
 
+header('X-Powered-By: URLS Framework v'.$URLS_VERSION);
+
 // Update
 include 'update.php';
 
