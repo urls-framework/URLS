@@ -133,21 +133,23 @@ function urls_error($doc=null, $str=null, $error=array(), $template="other", $co
 function urls_path($path, $file, $vars=null) {
 	// Update
 
-	if ($version = @fopen("https://raw.githubusercontent.com/urls-framework/URLS/main/src/version.txt?".mt_rand(), "r")) {
-		$versionRaw = fread($version, 10);
-		fclose($version);
-		preg_match_all('/([^.]*).?/', $versionRaw, $verMatches, PREG_SET_ORDER, 0);
-		$ver = array();
-		for ($i=0; $i < count($verMatches)-1; $i++) { 
-			array_push($ver, $verMatches[$i][1]);
-		}
-		preg_match_all('/([^.]*).?/', $GLOBALS['URLS_VERSION'], $curVerMatches, PREG_SET_ORDER, 0);
-		$curVersion = array();
-		for ($i=0; $i < count($curVerMatches)-1; $i++) { 
-			array_push($curVersion, $curVerMatches[$i][1]);
-		}
-		if ($GLOBALS['URLS_AUTO_UPDATE'] && ($curVersion[0] == $ver[0] && $curVersion[1] != $ver[1])) {
-			urls_update();
+	if ($GLOBALS['URLS_AUTO_UPDATE']) {
+		if ($version = @fopen("https://raw.githubusercontent.com/urls-framework/URLS/main/src/version.txt?".mt_rand(), "r")) {
+			$versionRaw = fread($version, 10);
+			fclose($version);
+			preg_match_all('/([^.]*).?/', $versionRaw, $verMatches, PREG_SET_ORDER, 0);
+			$ver = array();
+			for ($i=0; $i < count($verMatches)-1; $i++) { 
+				array_push($ver, $verMatches[$i][1]);
+			}
+			preg_match_all('/([^.]*).?/', $GLOBALS['URLS_VERSION'], $curVerMatches, PREG_SET_ORDER, 0);
+			$curVersion = array();
+			for ($i=0; $i < count($curVerMatches)-1; $i++) { 
+				array_push($curVersion, $curVerMatches[$i][1]);
+			}
+			if ($GLOBALS['URLS_AUTO_UPDATE'] && ($curVersion[0] == $ver[0] && $curVersion[1] != $ver[1])) {
+				urls_update();
+			}
 		}
 	}
 
