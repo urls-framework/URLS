@@ -19,7 +19,7 @@ limitations under the License.
 $_ACCESS = array();
 $URLS_DEBUG = false;
 $URLS_AUTO_UPDATE = true;
-$URLS_VERSION = '1.3';
+$URLS_VERSION = '1.4';
 $URLS_VARS = array();
 // $TRAILING_SLASH = true;
 // $TRAILING_SLASH_STRICT = false;
