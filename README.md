@@ -5,9 +5,9 @@
 It is nearly imposible to make URLs look nice in pure PHP. URLS is a micro framework that takes ugly URLs and allows you to rewrite it any way you want. That means you can turn this URL, `https://examplesite.com/blog/home.php?post=1` into, `https://examplesite.com/blog/post/1/` with no `.htaccess` at all!
 
 ## Features
-* Automatic Updates - URLS automatically checks for updates everytime it is called so you never need to worry about updates! However, you will have to manualy install any major updates or updates that change how the UI works. It is recomended you disable this feature for produciton.
-* Easy to Use - URLS UI is similar to the URL routing system of Django!
-* Simple Setup - Just open the `urls_welcome.php` page in your browser and follow the simple instructions.
+* Automatic Updates - URLS automatically checks for updates everytime it is called. **It is recomended you disable this feature for produciton.**
+* Easy to Use
+* Simple Setup - Just open the `urls_install.php` page in your browser and follow the simple instructions.
 * Custom HTTP Error Pages.
 
 ## Requirements
@@ -15,7 +15,7 @@ It is nearly imposible to make URLs look nice in pure PHP. URLS is a micro frame
 * Server running Apache with mod_rewrite. URLS uses `.htaccess` so it will not work on a Nginx server. However, we are working on a Nginx version.
 
 ## Installation
-1. Open the `urls_welcome.php` file in your browser.
+1. Open the `urls_install.php` file in your browser.
 2. Fill out the required fields.
 3. Start making your urls!  
   
@@ -45,30 +45,34 @@ Note: this setup is fine for development, but not for production.
    URLS framework url config file.
    
    Add your paths here:
-   ex. urls_path('blog/', 'blog-home.php');
+   ex. $urls->path('blog/', 'blog-home.php');
    */
-   include 'urls/urls.php';
-   $BASE_URL = '/';
+   include 'urls/Urls.php';
+   Urls::$base = '/urlsTest/2/';
+   
+   $urls = new Urls;
    
    
-   urls_404();
+   $urls->exe();
    
    ?>
    ```
-4. Add `path('blog/', 'blog-home.php');` to your settings file under `include 'urls/urls.php';`. Here is the file now:
+4. Add `$urls->path('blog/', 'blog-home.php');` to your settings file under `include 'urls/Urls.php';`. Here is the file now:
    ```PHP
    <?php
    /*
    URLS framework url config file.
    
    Add your paths here:
-   ex. urls_path('blog/', 'blog-home.php');
+   ex. $urls->path('blog/', 'blog-home.php');
    */
-   include 'urls/urls.php';
-   $BASE_URL = '/';
+   include 'urls/Urls.php';
+   Urls::$base = '/urlsTest/2/';
    
-   urls_path('blog/', 'blog-home.php');
-   urls_404();
+   $urls = new Urls;
+   $urls->path('blog/', 'blog-home.php');
+   
+   $urls->exe();
    
    ?>
    ```
