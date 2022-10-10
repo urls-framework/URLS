@@ -48,7 +48,7 @@ Note: this setup is fine for development, but not for production.
    ex. $urls->path('blog/', 'blog-home.php');
    */
    include 'urls/Urls.php';
-   Urls::$base = '/urlsTest/2/';
+   Urls::$base = '/';
    
    $urls = new Urls;
    
@@ -67,7 +67,7 @@ Note: this setup is fine for development, but not for production.
    ex. $urls->path('blog/', 'blog-home.php');
    */
    include 'urls/Urls.php';
-   Urls::$base = '/urlsTest/2/';
+   Urls::$base = '/';
    
    $urls = new Urls;
    $urls->path('blog/', 'blog-home.php');
