@@ -1,4 +1,4 @@
-# Documentation - public __construct(...$pathArrays)
+# Documentation - Urls::\_\_construct(...$pathArrays)
 ## Description
 Sets a default set of paths.
 | Returns |
