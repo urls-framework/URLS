@@ -16,7 +16,7 @@ Sets a default set of paths.
 URLS framework url config file.
 
 Add your paths here:
-ex. $urls->path('blog/', 'blog-home.php');
+ex. $urls->path('blog/', 'blog-home.php', true);
 */
 include 'urls/Urls.php';
 Urls::$base = '/';
