@@ -15,6 +15,7 @@ Adds a rewrite condition to the `.htaccess` file between the `# --URLS ADD_COND 
 <?php
 /*
 URLS framework url config file.
+
 Add your paths here:
 ex. $urls->path('blog/', 'blog-home.php', true);
 */
