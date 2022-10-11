@@ -11,7 +11,7 @@ Creates a new path.
 |   $path   | -       | String | :heavy_check_mark: | The URL path you want to call this function on. |
 |   $file   | -       | String/Array/Object: Urls | :heavy_check_mark: | The file path and name you want to use as a template or an array containing one string element you want to directly output or a Urls object to compare a sub-path. |
 |   $end    | False   | Bool   | :x:                | True if this is the end of the path. If there is more after this point, it will be seen as not matching and will result in a 404 error. |
-|   $cs     | NULL    | Bool   | :x:                | Whether this path is case sensitive or not. If NULL, the default defined in URLS::$cs will be assumed. |
+|   $cs     | NULL    | Bool   | :x:                | Whether this path is case sensitive or not. If NULL, the default defined in `URLS::$cs` will be assumed. |
 |   $vars   | NULL    | Array  | :x:                | An array of variables to pass on to the included page. |
 ## Examples
 ```PHP
