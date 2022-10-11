@@ -22,7 +22,7 @@ include 'urls/Urls.php';
 Urls::$base = '/';
 
 $urls = new Urls;
-$urls->path('blog/', 'blog-home.php', true)
+$urls->path('blog/', 'blog-home.php', true);
 
 $urls->exe();
 
