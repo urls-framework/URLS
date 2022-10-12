@@ -1,6 +1,6 @@
 # Documentation - Urls::error_404($doc=null, $showNoError=false)
 ## Description
-Creates a new path.
+Triggers a 404 HTTP error.
 | Returns |
 | ------- |
 |  void   |
