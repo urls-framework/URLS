@@ -2,11 +2,12 @@
 
 ## Supported Versions
 
-Currently, version 1.0 is the most recent and up to date version of the URLS framework.
+Currently, version 2.0.0 is the most recent and up to date version of the URLS framework.
 
 | Version | Supported          |
 | ------- | ------------------ |
-|   1.0   | :heavy_check_mark: |
+|   1.0   | :x: |
+|   2.0.0   | :heavy_check_mark: |
 
 ## Reporting a Vulnerability
 
