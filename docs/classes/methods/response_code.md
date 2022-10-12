@@ -1,6 +1,6 @@
 # Documentation - Urls::response_code($error, $doc=null, $showNoError=false)
 ## Description
-Creates a new path.
+Triggers the error specified.
 | Returns |
 | ------- |
 |  void   |
