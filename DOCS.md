@@ -27,5 +27,10 @@ This is the documentation for the URLS Framework.
     * [static $base](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/base.md)
     * [static $cs](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/cs.md)
     * [static $objects](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/objects.md)
+    * [static $self](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/self.md)
+    * [static $objectsCalled](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/objectsCalled.md)
+    * [static $successPaths](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/successPaths.md)
+    * [static $defaultErrors](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/defaultErrors.md)
+    * [$errors](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/errors.md)
 ## Functions
 * [urls_update()](https://github.com/urls-framework/URLS/blob/main/docs/functions/urls_update.md)
