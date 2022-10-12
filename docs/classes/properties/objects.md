@@ -19,11 +19,11 @@ Urls::$base = '/';
 
 $blog = new Urls;
 $blog->path('/', 'blog-home.php', true);
-$blog->$errors[404] = "obj2/404_error.php";
+$blog->$errors[403] = "obj2/403_error.php";
 
 $urls = new Urls;
 $urls->path('blog/', $blog, false);
-$urls->$errors[404] = "obj1/404_error.php";
+$urls->$errors[403] = "obj1/403_error.php";
 
 $urls->exe();
 
@@ -41,8 +41,8 @@ $urls->exe();
 <body>
 <h1>This is my blog!</h1>
 <?php
-Urls::$objects[0]->error_404();
-Urls::$objects[1]->error_404();
+Urls::$objects[0]->error_403();
+Urls::$objects[1]->error_403();
 ?>
 </body>
 </html>
