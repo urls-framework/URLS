@@ -1,24 +1,24 @@
 # Guides - Deploy your Site
 Deploying your site is not very different than deploying any other PHP site. However, it is very important to change a few settings or else the performance and security will be significantly effected.
-1. Disable `$URLS_AUTO_UPDATE` and `$URLS_DEBUG` by adding `$URLS_DEBUG = false;` and `$URLS_AUTO_UPDATE = false;` to your settings file:
+1. Disable `Urls::$debug` and `Urls::$autoUpdate` by adding `Urls::$debug = false;` and `Urls::$autoUpdate = false;` to your settings file:
    ```PHP
    <?php
    /*
    URLS framework url config file.
-   
+
    Add your paths here:
-   ex. urls_path('blog/', 'blog-home.php');
+   ex. $urls->path('blog/', 'blog-home.php', true);
    */
-   include 'urls/urls.php';
-   $BASE_URL = '/';
-   
-   // For Production
-   $URLS_DEBUG = false;
-   $URLS_AUTO_UPDATE = false;
-   
-   urls_path('blog/', 'blog-home.php');
-   urls_404();
-   
+   include 'urls/Urls.php';
+   Urls::$base = '/';
+   Urls::$debug = false;
+   Urls::$autoUpdate = false;
+
+   $urls = new Urls;
+   $urls->path('blog/', 'blog-home.php', true);
+
+   $urls->exe();
+
    ?>
    ```
 2. Deploy your site as you would any other PHP site. Each host is a little different. See your hosting provider's documentation for instructions.
