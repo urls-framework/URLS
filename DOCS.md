@@ -8,7 +8,7 @@ This is the documentation for the URLS Framework.
     * [path($path, $file, $end=false, $cs=null, $vars=null)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/path.md)
     * [static rewriteCond($cond, $htaccess=null)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/rewriteCond.md)
     * [static rewriteCondRemove($cond, $htaccess=null)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/rewriteCondRemove.md)
-    * [static redirect($path, $to, $cs=true, $type=null)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/redirect.md)
+    * [redirect($path, $to, $cs=true, $type=null)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/redirect.md)
     * [static echo($echo='')](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/echo.md)
     * [response_code($error, $doc=null, $showNoError=false)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/response_code.md)
     * [error_404($doc=null, $showNoError=false)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/error_404.md)
