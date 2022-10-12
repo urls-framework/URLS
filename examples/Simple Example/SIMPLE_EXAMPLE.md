@@ -33,7 +33,7 @@
    
    ?>
    ```
-4. Add `$urls->path('blog/', 'blog-home.php');` to your settings file under `include 'urls/Urls.php';`. Here is the file now:
+4. Add `$urls->path('blog/', 'blog-home.php', true);` to your settings file under `include 'urls/Urls.php';`. Here is the file now:
    ```PHP
    <?php
    /*
