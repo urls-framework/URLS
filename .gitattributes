@@ -1,5 +1,4 @@
 /.gitattributes export-ignore
-/src export-ignore
 /.gitignore export-ignore
 /README.md export-ignore
 /SECURITY.md export-ignore
@@ -10,3 +9,4 @@
 /changelog.md export-ignore
 /docs export-ignore
 /DOCS.md export-ignore
+/update_files export-ignore

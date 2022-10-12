@@ -21,30 +21,34 @@
    URLS framework url config file.
    
    Add your paths here:
-   ex. urls_path('blog/', 'blog-home.php');
+   ex. $urls->path('blog/', 'blog-home.php', true);
    */
-   include 'urls/urls.php';
-   $BASE_URL = '/';
+   include 'urls/Urls.php';
+   Urls::$base = '/';
+   
+   $urls = new Urls;
    
    
-   urls_404();
+   $urls->exe();
    
    ?>
    ```
-4. Add `path('blog/', 'blog-home.php');` to your settings file under `include 'urls/urls.php';`. Here is the file now:
+4. Add `$urls->path('blog/', 'blog-home.php', true);` to your settings file under `include 'urls/Urls.php';`. Here is the file now:
    ```PHP
    <?php
    /*
    URLS framework url config file.
    
    Add your paths here:
-   ex. urls_path('blog/', 'blog-home.php');
+   ex. $urls->path('blog/', 'blog-home.php', true);
    */
-   include 'urls/urls.php';
-   $BASE_URL = '/';
+   include 'urls/Urls.php';
+   Urls::$base = '/';
    
-   urls_path('blog/', 'blog-home.php');
-   urls_404();
+   $urls = new Urls;
+   $urls->path('blog/', 'blog-home.php', true);
+   
+   $urls->exe();
    
    ?>
    ```
@@ -52,4 +56,4 @@
 ![Output](https://github.com/urls-framework/URLS/blob/main/examples/Simple%20Example/example1.png?raw=true)
 
 For more examples see [GUIDES](https://github.com/urls-framework/URLS/blob/main/GUIDES.md).  
-The source code for this example is at [https://github.com/urls-framework/URLS/tree/main/examples/Simple%20Example/scr](https://github.com/urls-framework/URLS/tree/main/examples/Simple%20Example/scr).
+The source code for this example is at [https://github.com/urls-framework/URLS/tree/main/examples/Simple%20Example/src](https://github.com/urls-framework/URLS/tree/main/examples/Simple%20Example/src).
