@@ -1,4 +1,4 @@
-# Documentation - static $cs
+# Documentation - static Urls::$cs
 ## Description
 Sets whether the project should be case sensitive be default.
 |  Type | Default Value |
