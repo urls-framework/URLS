@@ -1,4 +1,4 @@
-# Documentation - static $vars
+# Documentation - static Urls::$vars
 ## Description
 An array containing variables passed on in the `path` method.
 |  Type | Default Value |
