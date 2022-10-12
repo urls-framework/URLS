@@ -1,4 +1,4 @@
-# Documentation - static $autoUpdate
+# Documentation - static Urls::$autoUpdate
 ## Description
 Sets whether the current project should auto update or not. Should be set to false for production use.
 |  Type | Default Value |
