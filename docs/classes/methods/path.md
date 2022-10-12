@@ -30,7 +30,8 @@ $urls->path('posts/', 'posts.php', true, false);
 
 $urls = new Urls;
 $urls->path('blog/', 'blog-home.php', true, false, array("Hello, ", "World!"));
-$urls->path('blog/', array("This is my blog!"), true, false);
+$urls->path('blog/', ["This is my blog!"], true, false);
+$urls->path('blog/', Urls::echo("This is my blog!"), true, false);
 $urls->path('blog/', $blog, false, false); // Note: $end should always be false if $file is type object or else, $blog will not be called
 
 $urls->exe();
