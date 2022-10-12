@@ -1,4 +1,4 @@
-# Documentation - static $objectsCalled
+# Documentation - static Urls::$objectsCalled
 ## Description
 The number of instances traversed since `exe()` was called.
 |  Type | Default Value |
