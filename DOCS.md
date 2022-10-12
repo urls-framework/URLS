@@ -21,5 +21,11 @@ This is the documentation for the URLS Framework.
     * [Urls::VERSION](https://github.com/urls-framework/URLS/blob/main/docs/classes/constants/VERSION.md)
   * ### Properties
     * [static $access](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/access.md)
+    * [static $debug](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/debug.md)
+    * [static $autoUpdate](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/autoUpdate.md)
+    * [static $vars](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/vars.md)
+    * [static $base](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/base.md)
+    * [static $cs](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/cs.md)
+    * [static $objects](https://github.com/urls-framework/URLS/blob/main/docs/classes/properties/objects.md)
 ## Functions
 * [urls_update()](https://github.com/urls-framework/URLS/blob/main/docs/functions/urls_update.md)
