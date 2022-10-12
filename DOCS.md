@@ -9,5 +9,12 @@ This is the documentation for the URLS Framework.
   *  [static rewriteCond($cond, $htaccess=null)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/rewriteCond.md)
   *  [static rewriteCondRemove($cond, $htaccess=null)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/rewriteCondRemove.md)
   *  [static redirect($path, $to, $cs=true, $type=null)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/redirect.md)
+  *  [static echo($echo='')](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/echo.md)
+  *  [response_code($error, $doc=null, $showNoError=false)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/response_code.md)
+  *  [error_404($doc=null, $showNoError=false)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/error_404.md)
+  *  [error_403($doc=null, $showNoError=false)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/error_403.md)
+  *  [error_401($doc=null, $showNoError=false)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/error_401.md)
+  *  [error_400($doc=null, $showNoError=false)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/error_400.md)
+  *  [error_500($doc=null, $showNoError=false)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/error_500.md)
 ## Functions
 * [urls_update()](https://github.com/urls-framework/URLS/blob/main/docs/functions/urls_update.md)
