@@ -22,7 +22,9 @@ Creates a new path.
 </head>
 <body>
 <h1>This is my Blog</h1>
+
 <?php $this->response_code(403, "errors/404_error.php"); ?>
+
 <p>Welcome!</p>
 </body>
 </html>
