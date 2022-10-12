@@ -22,7 +22,6 @@ It is nearly imposible to make URLs look nice in pure PHP. URLS is a micro frame
 For a more complete example, see [guides/INSTALL.md](https://github.com/urls-framework/URLS/blob/main/guides/INSTALL.md).
 
 ## Simple example
-Note: this setup is fine for development, but not for production.
 1. Install the URLS framework (see [this guide](https://github.com/urls-framework/URLS/blob/main/guides/INSTALL.md)).
 2. Create a new file named `blog-home.php` and fill it with:
    ```HTML
