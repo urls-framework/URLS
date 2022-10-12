@@ -1,4 +1,4 @@
-# Documentation - static $base
+# Documentation - static Urls::$base
 ## Description
 Sets the base URL for the project.
 |  Type  | Default Value |
