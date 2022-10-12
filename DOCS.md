@@ -16,5 +16,6 @@ This is the documentation for the URLS Framework.
   *  [error_401($doc=null, $showNoError=false)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/error_401.md)
   *  [error_400($doc=null, $showNoError=false)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/error_400.md)
   *  [error_500($doc=null, $showNoError=false)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/error_500.md)
+  *  [error($doc=null, $str=null, $template="other", $code=null)](https://github.com/urls-framework/URLS/blob/main/docs/classes/methods/error.md)
 ## Functions
 * [urls_update()](https://github.com/urls-framework/URLS/blob/main/docs/functions/urls_update.md)
