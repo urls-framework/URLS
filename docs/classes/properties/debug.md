@@ -1,4 +1,4 @@
-# Documentation - static $debug
+# Documentation - static Urls::$debug
 ## Description
 Sets whether the current project is in debug mode or not.
 |  Type | Default Value |
