@@ -1,4 +1,4 @@
-# Documentation - static $objects
+# Documentation - static Urls::$objects
 ## Description
 An array containing each `Urls` instance called since the `exe()` was called in the order they were called.
 |  Type | Default Value |
