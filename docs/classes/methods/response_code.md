@@ -23,7 +23,7 @@ Creates a new path.
 <body>
 <h1>This is my Blog</h1>
 
-<?php $this->response_code(403, "errors/404_error.php"); ?>
+<?php Urls::$self->response_code(403, "errors/404_error.php"); ?>
 
 <p>Welcome!</p>
 </body>
