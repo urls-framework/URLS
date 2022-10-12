@@ -1,4 +1,4 @@
-# Documentation - static $successPaths
+# Documentation - static Urls::$successPaths
 ## Description
 An array containing all the paths successfuly called.
 |  Type | Default Value |
