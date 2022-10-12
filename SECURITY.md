@@ -8,7 +8,7 @@ Currently, version 2.0.0 is the most recent and up to date version of the URLS f
 | ------- | ------------------ |
 |   1.0   |        :x:         |
 |   1.1   |        :x:         |
-|  1.1.2  | :heavy_check_mark: |
+|  1.1.2  |        :x:         |
 |  2.0.0  | :heavy_check_mark: |
 
 ## Reporting a Vulnerability
