@@ -1,4 +1,4 @@
-# Documentation - static $access
+# Documentation - static Urls::$access
 ## Description
 Similar to `$_GET` and `$_POST`, `$access` sets variables in variable urls and sets each one in an array element with the key being the variable name.
 |  Type | Default Value |
