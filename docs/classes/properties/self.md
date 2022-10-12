@@ -1,4 +1,4 @@
-# Documentation - static $self
+# Documentation - static Urls::$self
 ## Description
 The current instance of the `Urls` object.
 |  Type | Default Value |
