@@ -1,6 +1,6 @@
 <?php
 /*
-Copyright 2021 Micah Baumann
+Copyright 2022 Micah Baumann
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -15,33 +15,50 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-function urls_update() {
-	if (isset($GLOBALS['BASE_URL'])/* && isset($GLOBALS['URLS_SETTINGS'])*/) {
-		if ($urls = @fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/src/urls.php?'.mt_rand(), 'r')) { 
-			file_put_contents(basename(__DIR__).'/urls.php', $urls);
-			fclose($urls);
+function urls_update($deleteFiles=false) {
+	if (isset(Urls::$base)) {
+		// Delete all files in this directory
+		$files = glob(basename(__DIR__).'/*');
+		foreach($files as $file) {
+			if(is_file($file)) {
+				unlink($file);
+			}
+		}
+
+		// Download the update files
+		$updateFilePath = basename(__DIR__).'/UrlsUpdate.zip';
+		file_put_contents($updateFilePath, file_get_contents('https://raw.githubusercontent.com/urls-framework/URLS/main/update_files/UrlsUpdate.zip?'.mt_rand()));
+
+		// Extract the zip folder
+		$zip = new ZipArchive;
+		$res = $zip->open($updateFilePath, PATHINFO_DIRNAME);
+		if ($res === true) {
+			$zip->extractTo(basename(__DIR__));
+			$zip->close();
 		} else {
 			return false;
 		}
 
-		if ($update = @fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/src/update.php?'.mt_rand(), 'r')) { 
-			file_put_contents(basename(__DIR__).'/update.php', $update);
-			fclose($update);
-		} else {
-			return false;
+		// Delete the update files
+		if ($deleteFiles === true) {
+			unlink($updateFilePath);
 		}
 
-		if ($licence = @fopen('https://raw.githubusercontent.com/urls-framework/URLS/main/LICENSE?'.mt_rand(), 'r')) { 
-			file_put_contents(basename(__DIR__).'/LICENSE', $licence);
-			fclose($licence);
-		} else {
-			return false;
-		}
 		return true;
 	} else {
 		return false;
 	}
 }
 
+if (Urls::$autoUpdate === true) {
+	if ($version = @fopen("https://raw.githubusercontent.com/urls-framework/URLS/main/src/version.txt?".mt_rand(), "r")) {
+		$versionRaw = fread($version, 10);
+		fclose($version);
+
+		if (version_compare($versionRaw, Urls::VERSION, '>')) {
+			urls_update();
+		}
+	}
+}
 
 ?>
