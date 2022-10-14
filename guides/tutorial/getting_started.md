@@ -66,8 +66,7 @@ The line `$urls->path('/', Urls::echo('Hello, World!'), true);` has four parts:
    * This is the content to be displayed.
    * Normally, a string containing the location of a PHP file is included here, but if you use the `Urls::echo()` function the included text will be outputed directly.
 4. `true`
-   * This argument is used to tell if this is the last path to look for. URLS allows you to define multiple instances of the `Urls` class. Instead of including a file in the second argument, you can include an instance of `Urls` or even another file with another instance of `Urls`. URLS will then narrow down the path even further. However, in this case there is no child paths to look for, so we set this to `true`.
-   * If it is set to `false`, then URLS will assume that there are further instructions after going to the included path and will display the current page for not only the current path, but for all the child paths too. For example [localhost/](http://localhost/) and [localhost/hello](http://localhost/hello) will be the same thing.
+   * This argument is used to tell if this is the last path to look for. URLS allows you to define multiple instances of the `Urls` class. Instead of including a file in the second argument, you can include an instance of `Urls` or even another file with another instance of `Urls`. This will be covered more later, but for now, just put `true`.
 
 ## The EXE Function
 The line `$urls->exe();` lets URLS know that you are done setting paths and are ready to start comparing them with the requested path.
