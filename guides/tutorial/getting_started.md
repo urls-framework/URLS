@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started with URLS
 1. Open the `settings.php` file. It should look something like this:
    ```PHP
    <?php
@@ -73,5 +73,5 @@ The line `$urls->exe();` lets URLS know that you are done setting paths and are 
   
 If everything looks good, then you are ready to move on.
 ___
-[Previous: Complete Tutorial](COMPLETE_TUTORIAL.md)  
-[Next: Getting Started](getting_started.md)
+[Previous: Project Setup](Setup.md)  
+[Next: Templates](templates.md)
