@@ -15,28 +15,28 @@ While this guide will work on most servers that support PHP, it is recommended t
 4. If you are installing on a live server, it is suggested that you check the checkbox asking if you would like to delete this file after installation and the checkbox asking if you would like to delete the installation files after installation. If you are still in development, you may want to keep this file in case you want a fresh reinstall. **BEWARE: IF YOU KEEP THIS FILE ON A LIVE SERVER ANYONE CAN REINSTALL AND/OR BREAK YOU SITE!!!**
 5. At this point, your file structure should look like this:
 ```
-/(base directory)
-    /urls
-        LICENSE
-        update.php
-        Urls.php
-    .htaccess
-    settings.php
+└── (base directory)/
+    ├── /urls/
+    │   ├── LICENSE
+    │   ├── update.php
+    │   └── Urls.php
+    ├── .htaccess
+    └── settings.php
 ```
 
 ## Setup
 In the base directory, create three folders, `templates`, `static`, and `includes`. The file structure should now look like this:
 ```
-/(base directory)
-    /includes
-    /static
-    /templates
-    /urls
-        LICENSE
-        update.php
-        Urls.php
-    .htaccess
-    settings.php
+└── (base directory)/
+    ├── includes/
+    ├── static/
+    ├── templates/
+    ├── urls/
+    │   ├── LICENSE
+    │   ├── update.php
+    │   └── Urls.php
+    ├── .htaccess
+    └── settings.php
 ```
 Now we are finally ready to start building the blog!
 
