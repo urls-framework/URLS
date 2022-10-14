@@ -1,4 +1,4 @@
-# Setup
+# Project Setup
 ## Installing
 While this guide will work on most servers that support PHP, it is recommended that you use a [localhost](https://en.wikipedia.org/wiki/Localhost) like [XAMPP](https://www.apachefriends.org/). This tutorial will assume you are using a localhost. Because of this, some security settings, mainly in the setup, may be different for a live server. If you are not using a localhost, just change any link opening up the project from `localhost/` to `(your domain)/`.
 1. Download and open the `urls_install.php` file in your browser.
