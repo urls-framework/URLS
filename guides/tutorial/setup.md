@@ -30,7 +30,7 @@ In the base directory, create three folders, `templates`, `static`, and `include
     ├── .htaccess
     └── settings.php
 ```
-Now we are finally ready to start building the blog!
+
 ___
 [Previous: Getting Started](getting_started.md)  
 [Next: Templates](templates.md)
