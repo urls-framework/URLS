@@ -8,8 +8,8 @@ This guide will walk you through a complete implementaion of URLS. You will be m
 * Some knowledge of how the `.htaccess` file works.
 
 ## Contents
-[Project Setup](setup.md)
-[Getting Started with URLS](getting_started.md)
-[Templates](templates.md)
+1. [Project Setup](setup.md)
+2. [Getting Started with URLS](getting_started.md)
+3. [Templates](templates.md)
 ___
 [Next: Project Setup](setup.md)
