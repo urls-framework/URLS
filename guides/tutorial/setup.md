@@ -31,3 +31,6 @@ In the base directory, create three folders, `templates`, `static`, and `include
     └── settings.php
 ```
 Now we are finally ready to start building the blog!
+___
+[Privious: Complete Tutorial](COMPLETE_TUTORIAL.md)  
+[Next: Getting Started](getting_started.md)
