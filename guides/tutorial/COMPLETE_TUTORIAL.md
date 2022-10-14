@@ -6,5 +6,10 @@ This guide will walk you through a complete implementaion of URLS. You will be m
 * Some knowledge of HTML, CSS, and JavaScript.
 * Some knowledge of Bootstrap.
 * Some knowledge of how the `.htaccess` file works.
+
+## Contents
+[Project Setup](setup.md)
+[Getting Started with URLS](getting_started.md)
+[Templates](templates.md)
 ___
 [Next: Project Setup](setup.md)
