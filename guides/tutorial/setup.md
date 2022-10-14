@@ -32,5 +32,5 @@ In the base directory, create three folders, `templates`, `static`, and `include
 ```
 Now we are finally ready to start building the blog!
 ___
-[Previous: Complete Tutorial](COMPLETE_TUTORIAL.md)  
-[Next: Getting Started](getting_started.md)
+[Previous: Getting Started](getting_started.md)  
+[Next: Templates](templates.md)
