@@ -7,10 +7,8 @@ This guide will walk you through a complete implementaion of URLS. You will be m
 * Some knowledge of Bootstrap.
 * Some knowledge of how the `.htaccess` file works.
 
-## Setup
-While this guide will work on most servers that support PHP, it is recommended that you use a [localhost](https://en.wikipedia.org/wiki/Localhost) like [XAMPP](https://www.apachefriends.org/). This tutorial will assume that you are using a localhost. Because of this, some security settings, mainly in the setup, may be different for a live server.
-
 ## Installing
+While this guide will work on most servers that support PHP, it is recommended that you use a [localhost](https://en.wikipedia.org/wiki/Localhost) like [XAMPP](https://www.apachefriends.org/). This tutorial will assume that you are using a localhost. Because of this, some security settings, mainly in the setup, may be different for a live server.
 1. Download and open the `urls_install.php` file in your browser.
 2. Enter a base url. The base url is the path from your servers public directory (usally `public_html` or `htdocs`) to where you want the framework to be installed. It should begin and end in a `/`. If the base directory is the root of the public directory, then enter one `/`. For example, if your public directory is `htdocs` and you want to install the framework at `/htdocs/blog/` then you should enter in `/htdocs/blog/`, but if you want to install it in `htdocs`, then you should just enter `/`.
 3. Enter the name of the settings file you want to use. This tutorial will refer to the settings file as `settings.php` This file will be auto generated in the directory that you installed the framework in. Do not enter in any path information. Just enter the name of the file. If the file does not exist, then it will be created. **BEWARE: IF THE FILE SELECTED ALREADY EXISTS, IT WILL BE OVERWRITTEN!!!**
@@ -22,5 +20,23 @@ While this guide will work on most servers that support PHP, it is recommended t
         LICENSE
         update.php
         Urls.php
+    .htaccess
     settings.php
 ```
+
+## Setup
+In the base directory, create three folders, `templates`, `static`, and `includes`. The file structure should now look like this:
+```
+/(base directory)
+    /includes
+    /static
+    /templates
+    /urls
+        LICENSE
+        update.php
+        Urls.php
+    .htaccess
+    settings.php
+```
+Now we are finally ready to start building the blog!
+
