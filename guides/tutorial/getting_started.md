@@ -39,7 +39,7 @@
    ```
 3. Now open [localhost](http://localhost/). This should be the result\:  
    <picture>
-       <img alt="Output" src="/examples/static/hello_world_tutorial.png">
+       <img alt="Output" src="assets/hello_world_tutorial.png">
    </picture>
    
 ## Explanation
