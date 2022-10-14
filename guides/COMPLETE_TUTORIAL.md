@@ -79,7 +79,7 @@ Now we are finally ready to start building the blog!
 
    ?>
    ```
-3. Now open [localhost/](http://localhost/). This should be the result:  
+3. Now open [localhost](http://localhost/). This should be the result:  
    <picture>
        <img alt="Output" src="/examples/static/hello_world_tutorial.png">
    </picture>
