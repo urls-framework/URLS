@@ -32,5 +32,5 @@ In the base directory, create three folders, `templates`, `static`, and `include
 ```
 
 ___
-[Previous: Getting Started](getting_started.md)  
-[Next: Templates](templates.md)
+[Previous: Complete Tutorial](COMPLETE_TUTORIAL.md)  
+[Next: Getting Started](getting_started.md)
