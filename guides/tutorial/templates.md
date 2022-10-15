@@ -58,14 +58,14 @@ Now that we covered the basics of URLS templates, we can combine it with traditi
    <body>
        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
            <div class="container-fluid">
-               <a class="navbar-brand mb-0 h1" href="#">My Blog</a>
+               <a class="navbar-brand mb-0 h1" href="<?php echo Urls::$base; ?>">My Blog</a>
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                    <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse" id="collapsibleNavbar">
                    <ul class="navbar-nav">
                        <li class="nav-item">
-                           <a class="nav-link" href="#">Home</a>
+                           <a class="nav-link" href="<?php echo Urls::$base; ?>">Home</a>
                        </li>
                        <li class="nav-item">
                            <a class="nav-link" href="#">About</a>
@@ -103,7 +103,7 @@ Now that we covered the basics of URLS templates, we can combine it with traditi
    </picture>
    
 ## Explanation
-There is not much to explain here since this is mostly regular PHP and HTML and you should already have a good knowledge of it. Just like any other PHP program you make, you can include other PHP files without interfering in URLS. The biggest difference here is that URLS automatically protects your template files. With a regular PHP website, any user can easily access your template files, which could result in unwanted behavior. With URLS, the only PHP files users can access are the ones set by the path functions.
+There is not much to explain here since this is mostly regular PHP and HTML and you should already have a good knowledge of it. Just like any other PHP program you make, you can include other PHP files without interfering in URLS. The biggest difference here is that URLS automatically protects your template files. With a regular PHP website, any user can easily access your template files, which could result in unwanted behavior. With URLS, the only PHP files users can access are the ones set by the path functions. Another thing to mention is how to refrence other pages. For the most part, it is the same as a traditional website but, you can use the `Urls::$base` variable in the links to get you to your project's directory from the public root as seen in `header.inc.php` when setting the Home links.
 ___
 [Previous: Templates](templates.md)  
 [Next: Static Files](static_files.md)
