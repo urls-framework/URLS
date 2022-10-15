@@ -40,3 +40,6 @@ If you open up [localhost/](http://localhost/) again, you should see:
 <picture>
     <img alt="Output" src="assets/basic_home.png">
 </picture>
+
+## More Templates
+Now that we covered the basics of URLS templates, we can combine it with traditional PHP templates. Create two more files, `header.inc.php` and `footer.inc.php` in the includes folder.
