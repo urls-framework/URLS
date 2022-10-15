@@ -247,7 +247,7 @@ class Urls
 			}
 			return $include;
 		} else {
-			if (empty($path)) {
+			if (empty($path) || $path === "/") {
 				if (self::$debug) {
 					//$this->printRow('Request Path Trimmed', htmlspecialchars(rtrim($url, '/')));
 					$this->printRow('Test Path', htmlspecialchars(rtrim($dir, '/')));
