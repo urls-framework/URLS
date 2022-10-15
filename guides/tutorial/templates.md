@@ -103,7 +103,7 @@ Now that we covered the basics of URLS templates, we can combine it with traditi
    </picture>
    
 ## Explanation
-There is not much to explain here since this is mostly regular PHP and HTML and you should already have a good knowledge of it. Just like any other PHP program you make; you can include other PHP files without interfering in URLS. The biggest difference here is that URLS automatically protects your template files. With a regular PHP website, any user can easily access your template files, which could result in unwanted behavior. With URLS, the only PHP files users can access is the ones that are set in the path functions.
+There is not much to explain here since this is mostly regular PHP and HTML and you should already have a good knowledge of it. Just like any other PHP program you make, you can include other PHP files without interfering in URLS. The biggest difference here is that URLS automatically protects your template files. With a regular PHP website, any user can easily access your template files, which could result in unwanted behavior. With URLS, the only PHP files users can access is the ones that are set in the path functions.
 ___
 [Previous: Templates](templates.md)  
 [Next: Static Files](static_files.md)
