@@ -11,5 +11,6 @@ This guide will walk you through a complete implementaion of URLS. You will be m
 1. [Project Setup](setup.md)
 2. [Getting Started with URLS](getting_started.md)
 3. [Templates](templates.md)
+4. [Static Files](static_files.md)
 ___
 [Next: Project Setup](setup.md)
