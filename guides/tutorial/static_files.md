@@ -51,10 +51,10 @@ Next, lets add a banner styled with a custom CSS file.
                            <a class="nav-link" href="<?php echo Urls::$base; ?>">Home</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="#">About</a>
+                           <a class="nav-link" href="<?php echo Urls::$base; ?>about">About</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="#">Posts</a>
+                           <a class="nav-link" href="<?php echo Urls::$base; ?>posts">Posts</a>
                        </li>
                    </ul>
                </div>
