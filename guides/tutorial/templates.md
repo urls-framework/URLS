@@ -105,5 +105,5 @@ Now that we covered the basics of URLS templates, we can combine it with traditi
 ## Explanation
 There is not much to explain here since this is mostly regular PHP and HTML and you should already have a good knowledge of it. Just like any other PHP program you make, you can include other PHP files without interfering in URLS. The biggest difference here is that URLS automatically protects your template files. With a regular PHP website, any user can easily access your template files, which could result in unwanted behavior. With URLS, the only PHP files users can access are the ones set by the path functions. Another thing to mention is how to refrence other pages. For the most part, it is the same as a traditional website but, you can use the `Urls::$base` variable in the links to get you to your project's directory from the public root as seen in `header.inc.php` when setting the Home links.
 ___
-[Previous: Templates](templates.md)  
+[Previous: Getting Started with URLS](getting_started.md)  
 [Next: Static Files](static_files.md)
