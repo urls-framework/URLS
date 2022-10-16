@@ -1,6 +1,6 @@
 # Static Files
 URLS makes it easy to link static files, such as CSS and JavaScript files to HTML. Unlike other web frameworks, you don't have to register your static files before using them. URLS only redirects requests to PHP files and directories so you can directly access any static files in any subfolder.
-# Adding a Custom Style Sheet
+## Adding a Custom Style Sheet
 Next, lets add a banner styled with a custom CSS file.
 1. Create a new file in the `static` folder called `style.css` and fill it with the following code:
    ```CSS
