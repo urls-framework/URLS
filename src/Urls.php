@@ -56,11 +56,13 @@ class Urls
 	// Error templates
 	private $errorTemplates;
 
-	const VERSION = '2.0.0';
+	const VERSION = '2.0.1';
 
 	private static $rewriteConds = array();
 
 	private static $numOfChecks = 0;
+
+	private static $currentBase = '';
 
 	// Prints debug table rows
 	private function printRow($msg, $value) {
@@ -150,8 +152,12 @@ class Urls
 			$url = $url.'/';
 		}
 
-		if (substr($url, 0, strlen(self::$base)) == self::$base) {
-			$url = substr($url, strlen(self::$base));
+		if (empty(self::$currentBase)) {
+			self::$currentBase = self::$base;
+		}
+
+		if (substr($url, 0, strlen(self::$currentBase)) == self::$currentBase) {
+			$url = substr($url, strlen(self::$currentBase));
 		}
 		//$url = ltrim($url, self::$base);
 
@@ -160,7 +166,7 @@ class Urls
 			$this->printRow('Check Number', self::$numOfChecks);
 			$this->printRow('Objects Called', self::$objectsCalled);
 			$this->printRow('Request Path', htmlspecialchars($url));
-			$this->printRow('Base Path', htmlspecialchars(self::$base));
+			$this->printRow('Base Path', htmlspecialchars(self::$currentBase));
 			//echo '</table>';
 		}
 
@@ -237,7 +243,7 @@ class Urls
 
 			if ($include) {
 				for ($i=0; $i < $count; $i++) {
-					self::$base = self::$base.$uri[$i].'/';
+					self::$currentBase = self::$currentBase.$uri[$i].'/';
 				}
 			}
 
@@ -277,12 +283,12 @@ class Urls
 
 			if ($cs) {
 				if ($url === rtrim($dir, '/')) {
-					self::$base = self::$base.$url.'/';
+					self::$currentBase = self::$currentBase.$url.'/';
 					return true;
 				}
 			} else {
 				if (strcasecmp($url, rtrim($dir, '/')) === 0) {
-					self::$base = self::$base.$url.'/';
+					self::$currentBase = self::$currentBase.$url.'/';
 					return true;
 				}
 			}
