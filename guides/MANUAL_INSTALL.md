@@ -43,8 +43,9 @@
    RewriteRule ^settings\.php$ - [L]
    # --URLS ADD_COND BEGIN--
    # --URLS ADD_COND END--
-   RewriteCond %{REQUEST_FILENAME} !-f
    RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteCond %{REQUEST_FILENAME} !-f [OR]
+   RewriteCond %{REQUEST_FILENAME} \.php$
    RewriteRule . /blog/setting.php [L]
    RewriteRule ^$ /blog/settings.php [L]
    # --URLS END--
