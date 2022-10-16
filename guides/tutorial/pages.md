@@ -38,4 +38,4 @@ Now it's time to create some more pages!
    </picture>
 ___
 [Previous: Static Files](static_files.md)  
-[Next: Nesting Pages](nesting.md)
+[Next: Nesting Pages (part 1)](nesting_p1.md)
