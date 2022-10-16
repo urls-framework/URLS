@@ -77,4 +77,4 @@ Next, lets add a banner styled with a custom CSS file.
    </picture>
 ___
 [Previous: Templates](templates.md)  
-[Next: Pages](pages.md)
+[Next: More Pages](pages.md)
