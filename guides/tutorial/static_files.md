@@ -21,11 +21,11 @@ Next, lets add a banner styled with a custom CSS file.
         </div>
     </div>
    ```
-3. Now it's time to link `style.css` to `header.inc.php`. Remember, all requests are going to be displayed as if it were in the base directory. To do this add the following line to the `<head>` of `header.inc.php`:
+3. Now it's time to link `style.css` to `header.inc.php`. To do this add the following line to the `<head>` of `header.inc.php`:
    ```HTML
-   <link href="static/style.css" rel="stylesheet">
+   <link href="<?php echo Urls::$base; ?>static/style.css" rel="stylesheet">
    ```
-   Notice the `href` is pointing to `static/style.css` rather than `./static/style.css`.
+   Notice the `href` is pointing to `<?php echo Urls::$base; ?>static/style.css`. Since this header is going to be displayed on all pages, the `href` starts with `<?php echo Urls::$base; ?>` to make sure the file can be accessed the same way no matter what the path is.
 4. The full `header.inc.php` file should now look like:
    ```HTML
    <!DOCTYPE html>
@@ -36,7 +36,7 @@ Next, lets add a banner styled with a custom CSS file.
        <title><?php if (isset($pageTitle)) echo $pageTitle; ?> - My Blog</title>
        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-       <link href="static/style.css" rel="stylesheet">
+       <link href="<?php echo Urls::$base; ?>static/style.css" rel="stylesheet">
    </head>
    <body>
        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
