@@ -23,8 +23,9 @@
    RewriteRule ^(the name of your settings file regex encoded)$ - [L]
    # --URLS ADD_COND BEGIN--
    # --URLS ADD_COND END--
-   RewriteCond %{REQUEST_FILENAME} !-f
    RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteCond %{REQUEST_FILENAME} !-f [OR]
+   RewriteCond %{REQUEST_FILENAME} \.php$
    RewriteRule . (the name of your settings file regex encoded) [L]
    RewriteRule ^$ (the base directory followed by the settings file name) [L]
    # --URLS END--
