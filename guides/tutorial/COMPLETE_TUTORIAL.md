@@ -17,6 +17,6 @@ This guide will walk you through a complete implementaion of URLS. You will be m
 7. [Nesting Pages (part 2)](nesting_p2.md)
 8. [Nesting Pages (part 3)](nesting_p3.md)
 9. [Variable Paths](variable.md)
-10. [Errors](errors.md)
+10. [HTTP Errors](errors.md)
 ___
 [Next: Project Setup](setup.md)
