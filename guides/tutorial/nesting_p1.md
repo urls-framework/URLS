@@ -62,55 +62,6 @@ This is the easiest method to create subpaths. It is simply listing them out in 
    <picture>
        <img alt="Output" src="assets/authors_tutorial.png">
    </picture>
-5. Now lets add a few more pages. In the `templates` folder, create two new files, `Me.php` and `My-Friend.php`.
-6. Fill `Me.php` with:
-   ```PHP
-   <?php
-   $pageTitle = 'About Me';
-   include './includes/header.inc.php';
-   ?>
-   
-   <h1>Me</h1>
-   <p>This is information about me.</p>
-   
-   <?php include './includes/footer.inc.php'; ?>
-   ```
-7. Fill `My-Friend.php` with:
-   ```PHP
-   <?php
-   $pageTitle = 'About My Friend';
-   include './includes/header.inc.php';
-   ?>
-   
-   <h1>My Friend</h1>
-   <p>This is information about my friend.</p>
-   
-   <?php include './includes/footer.inc.php'; ?>
-   ```
-8. Finally, add `$urls->path('about/authors/Me', 'templates/Me.php', true);` and `$urls->path('about/authors/My-Friend', 'templates/My-Friend.php', true);` to `settings.php`:
-   ```PHP
-   <?php
-   /*
-   URLS framework url config file.
-   
-   Add your paths here:
-   ex. $urls->path('blog/', 'blog-home.php', true);
-   */
-   include 'urls/Urls.php';
-   Urls::$base = '/urlsblog/';
-   
-   $urls = new Urls;
-   $urls->path('/', 'templates/home.php', true);
-   $urls->path('about/', 'templates/about.php', true);
-   $urls->path('about/authors/', 'templates/authors.php', true);
-   $urls->path('about/authors/Me', 'templates/Me.php', true);
-   $urls->path('about/authors/My-Friend', 'templates/My-Friend.php', true);
-   
-   $urls->exe();
-   
-   ?>
-   ```
-9. You should now be able to go to [localhost/about/authors/Me](http://localhost/about/authors/Me) and [localhost/about/authors/My-Friend](http://localhost/about/authors/My-Friend).
 ___
 [Previous: More Pages](pages.md)  
 [Next: Nesting Pages (part 2)](nesting_p2.md)
