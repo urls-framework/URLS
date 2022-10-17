@@ -77,7 +77,7 @@ Variable paths (also called Variable URLs) are a very useful feature in URLS. Th
    </picture>
 
 ## Explanation
-This section has a lot going on. The first thing to note is `Urls::$access` variable. Like `$_POST` and `$_GET`, `Urls::$access` is an array containing all the variable URLs. The key to the array is the ID assigned in the path. How you define a variable ID in the path is in the first argument of the `path()` function, in the place you want the variable, enter `<(ID)>` where `(ID)` is the ID you want. In this example, the path is `'posts/<post>/'` so to access it, you would use, `Urls::$access['post']`.
+This section has a lot going on. The first thing to note is `Urls::$access` variable. Like `$_POST` and `$_GET`, `Urls::$access` is an array containing all the variable URLs. The key to the array is the ID assigned in the path. How you define a variable ID in the path is in the first argument of the `path()` function, in the place you want the variable, enter `<(ID)>` where `(ID)` is the ID you want. In this example, the path is `'posts/<post>/'` so to access it, you would use `Urls::$access['post']`.
 ___
 [Previous: Nesting Pages (part 3)](nesting_p3.md)  
 [Next: Errors](errors.md)
