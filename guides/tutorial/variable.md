@@ -1,5 +1,6 @@
 # Variable Paths
-Variable paths (also called Variable URLs) are a very useful feature in URLS. They are similar to query strings except the query part is part of the url.
+Variable paths (also called Variable URLs) are a very useful feature in URLS. They are similar to query strings except the query part is part of the url. In this section, we will build the post system. Since tutorial is meant to help you learn how to use URLS, we are going to take some shortcuts so we can focus on the URLS parts more. Specifically, we will not be using a database, instead we will just use an array and we will not allow users to write and edit posts.
+
 1. Create a new file in templates called `posts.php` and fill it with the following:
    ```PHP
    <?php
@@ -72,5 +73,11 @@ Variable paths (also called Variable URLs) are a very useful feature in URLS. Th
    </picture>
 4. If you go to [localhost/posts/1](http://localhost/posts/1), you should see:
    <picture>
-       <img alt="Output" src="assets/posts_1_tutorial.png">
+       <img alt="Output" src="assets/post_1_tutorial.png">
    </picture>
+
+## Explanation
+This section has a lot going on. The first thing to note is `Urls::$access` variable. Like `$_POST` and `$_GET`, `Urls::$access` is an array containing all the variable URLs. The key to the array is the ID assigned in the path. How you define a variable ID in the path is in the first argument of the `path()` function, in the place you want the variable, enter `<(ID)>` where `(ID)` is the ID you want. In this example, the path is `'posts/<post>/'` so to access it, you would use, `Urls::$access['post']`.
+___
+[Previous: Nesting Pages (part 3)](nesting_p3.md)  
+[Next: Errors](errors.md)
