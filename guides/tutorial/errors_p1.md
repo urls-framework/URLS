@@ -1,4 +1,4 @@
-# HTTP Errors
+# HTTP Errors (part 1)
 In the [last section](variable.md), if a post was not found, then the user would be redirected to [localhost/posts](http://localhost/posts). This is not the best way to handle error. A better way is to call a 404 error. Luckily, URLS helps with that.
 ## Calling Errors
 1. In `posts.php` change the if statement right after the `$posts` definition to:
