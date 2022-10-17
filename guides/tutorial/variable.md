@@ -118,4 +118,4 @@ if (isset($_GET['post']) && isset($posts[$_GET['post']])) {
 Instead of going to [localhost/posts/1](http://localhost/posts/1) to access post 1, you would go to [localhost/posts?post=1](http://localhost/posts?post=1).
 ___
 [Previous: Nesting Pages (part 3)](nesting_p3.md)  
-[Next: Errors](errors.md)
+[Next: HTTP Errors](errors.md)
