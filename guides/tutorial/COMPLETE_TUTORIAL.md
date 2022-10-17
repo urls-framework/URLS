@@ -14,5 +14,7 @@ This guide will walk you through a complete implementaion of URLS. You will be m
 4. [Static Files](static_files.md)
 5. [More Pages](pages.md)
 6. [Nesting Pages (part 1)](nesting_p1.md)
+7. [Nesting Pages (part 2)](nesting_p2.md)
+8. [Nesting Pages (part 3)](nesting_p3.md)
 ___
 [Next: Project Setup](setup.md)
