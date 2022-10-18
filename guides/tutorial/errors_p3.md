@@ -98,4 +98,4 @@ This section uses two functions, `Urls::rewriteCond()` and `Urls::rewriteCondRem
 There are a lot of different error configurations for URLS. See the [documentation](/DOCS.md) for more information.
 ___
 [Previous: HTTP Errors (part 2)](errors_p2.md)  
-[Next: Case Sensitive](cs.md)
+[Next: Case Sensitivity](cs.md)
