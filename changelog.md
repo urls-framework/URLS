@@ -10,3 +10,6 @@
 * The next major version of URLS is here!
 * This version introduces many changes to the structure like object-oriented design and different variable names. You may have to make some changes to your site to make it compatible with this release.
 * Other features include, case sensitive options, better debugging, access to the `.htaccess` file, increased efficiency, and many more!
+## Version 2.0.1 - 10-18-22
+* Fixed an error involving the `Urls::$base` variable.
+* Fixed an error with the `.htaccess` file.
