@@ -73,5 +73,5 @@ The line `$urls->exe();` lets URLS know that you are done setting paths and are 
   
 If everything looks good, then you are ready to move on.
 ___
-[Previous: Project Setup](Setup.md)  
+[Previous: Project Setup](setup.md)  
 [Next: Templates](templates.md)
