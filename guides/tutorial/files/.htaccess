@@ -5,13 +5,13 @@
 # edits made may be overwritten automatically.
 Options +FollowSymLinks
 RewriteEngine On
-RewriteBase /urlsblog/
+RewriteBase /
 RewriteRule ^settings\.php$ - [L]
 # --URLS ADD_COND BEGIN--
 # --URLS ADD_COND END--
 RewriteCond %{REQUEST_FILENAME} !-d [OR]
 RewriteCond %{REQUEST_FILENAME} !-f [OR]
 RewriteCond %{REQUEST_FILENAME} \.php$
-RewriteRule . /urlsblog/settings.php [L]
-RewriteRule ^$ /urlsblog/settings.php [L]
+RewriteRule . /settings.php [L]
+RewriteRule ^$ /settings.php [L]
 # --URLS END--
