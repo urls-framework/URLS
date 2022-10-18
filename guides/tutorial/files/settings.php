@@ -9,6 +9,7 @@ include 'urls/Urls.php';
 Urls::$base = '/';
 Urls::$defaultErrors[404] = "errors/404.php";
 Urls::$cs = true;
+Urls::$debug = false;
 
 $contributors = new Urls;
 $contributors->errors[404] = "errors/contributors_404.php";
