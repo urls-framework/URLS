@@ -61,6 +61,7 @@ This guide will walk you through a complete implementaion of URLS. You will be m
 |<picture><img alt="Output" src="assets/home_tutorial.png"></picture>|<picture><img alt="Output" src="assets/about_page.png"></picture>|
 |--------------------------------------------------------------------|--------------------------------------------------------------------|
 |<picture><img alt="Output" src="assets/posts_tutorial.png"></picture>|<picture><img alt="Output" src="assets/post_1_tutorial.png"></picture>|
+|--------------------------------------------------------------------|--------------------------------------------------------------------|
 |<picture><img alt="Output" src="assets/authors_tutorial.png"></picture>|<picture><img alt="Output" src="assets/404.png"></picture>|
 
 ___
