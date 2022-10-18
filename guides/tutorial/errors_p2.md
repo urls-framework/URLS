@@ -50,7 +50,7 @@ As mentioned in the [previous section](errors_p1.md), URLS allows you to trigger
    ex. $urls->path('blog/', 'blog-home.php', true);
    */
    include 'urls/Urls.php';
-   Urls::$base = '/urlsblog/';
+   Urls::$base = '/';
    Urls::$defaultErrors[404] = "errors/404.php";
    
    $contributors = new Urls;
@@ -101,7 +101,7 @@ The static variable `Urls::$defaultErrors` works for the entire project, but wha
    ex. $urls->path('blog/', 'blog-home.php', true);
    */
    include 'urls/Urls.php';
-   Urls::$base = '/urlsblog/';
+   Urls::$base = '/';
    Urls::$defaultErrors[404] = "errors/404.php";
    
    $contributors = new Urls;
