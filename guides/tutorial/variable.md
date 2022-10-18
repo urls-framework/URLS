@@ -47,7 +47,7 @@ Variable paths (also called Variable URLs) are a very useful feature in URLS. Th
    ex. $urls->path('blog/', 'blog-home.php', true);
    */
    include 'urls/Urls.php';
-   Urls::$base = '/urlsblog/';
+   Urls::$base = '/';
    
    $contributors = new Urls;
    $contributors->path('/', 'templates/contributors.php', true);
