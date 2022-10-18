@@ -25,5 +25,37 @@ This guide will walk you through a complete implementaion of URLS. You will be m
 15. [Passing Variables](vars.md)
 16. [Deploying](deploy.md)
 17. [Conclusion](conclusion.md)
+
+## Project Structure
+```
+└── (base directory)/
+    ├── errors/
+    │   ├── 404.php
+    │   ├── 500.php
+    │   └── contributors_500.php
+    ├── includes/
+    │   ├── footer.inc.php
+    │   └── header.inc.php
+    ├── static/
+    │   └── style.css
+    ├── templates/
+    │   ├── about.php
+    │   ├── Another-Friend.php
+    │   ├── authors.php
+    │   ├── contributors.php
+    │   ├── errors.php
+    │   ├── home.php
+    │   ├── Me.php
+    │   ├── My-Friend.php
+    │   ├── posts.php
+    │   └── vars.php
+    ├── urls/
+    │   ├── LICENSE
+    │   ├── update.php
+    │   └── Urls.php
+    ├── .htaccess
+    ├── author_settings.php
+    └── settings.php
+```
 ___
 [Next: Project Setup](setup.md)
