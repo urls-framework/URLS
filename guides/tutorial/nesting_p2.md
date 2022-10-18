@@ -46,7 +46,7 @@ This is a harder way to nest, however it can help you organize your files better
    
    ?>
    ```
-   Notice how the `include 'urls/Urls.php';` and `Urls::$base = '/urlsblog/';` are not include here. This is because this code is only running after `$urls` is called. Since `include 'urls/Urls.php';` is already included in `settings.php` and `Urls::$base = '/urlsblog/';` is a static variable declared in `settings.php`, there is no need to call them here.
+   Notice how the `include 'urls/Urls.php';` and `Urls::$base = '/';` are not include here. This is because this code is only running after `$urls` is called. Since `include 'urls/Urls.php';` is already included in `settings.php` and `Urls::$base = '/';` is a static variable declared in `settings.php`, there is no need to call them here.
 5. Finally, change `$urls->path('about/authors/', 'templates/authors.php', true);` path to `$urls->path('about/authors/', 'authors_settings.php');`:
    ```PHP
    <?php
