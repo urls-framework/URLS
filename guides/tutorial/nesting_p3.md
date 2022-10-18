@@ -71,7 +71,7 @@ This is the final type of nesting URLS supports.
    ex. $urls->path('blog/', 'blog-home.php', true);
    */
    include 'urls/Urls.php';
-   Urls::$base = '/urlsblog/';
+   Urls::$base = '/';
    
    $contributors = new Urls;
    $contributors->path('/', 'templates/contributors.php', true);
@@ -98,7 +98,7 @@ This is the final type of nesting URLS supports.
    ex. $urls->path('blog/', 'blog-home.php', true);
    */
    include 'urls/Urls.php';
-   Urls::$base = '/urlsblog/';
+   Urls::$base = '/';
    
    $contributors = new Urls;
    $contributors->path('/', 'templates/contributors.php', true);
