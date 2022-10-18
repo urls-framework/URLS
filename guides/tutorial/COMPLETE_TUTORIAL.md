@@ -21,5 +21,6 @@ This guide will walk you through a complete implementaion of URLS. You will be m
 11. [HTTP Errors (part 2)](errors_p2.md)
 12. [HTTP Errors (part 3)](errors_p3.md)
 13. [Case Sensitivity](cs.md)
+14. [Redirects](redirects.md)
 ___
 [Next: Project Setup](setup.md)
