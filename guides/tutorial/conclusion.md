@@ -31,4 +31,6 @@ This is finally the end of this tutorial. You should now have a solid understand
     └── settings.php
 ```
 While this tutorial covered most topics, there is still a lot to learn about URLS. Now that you've completed this tutorial, the best way to learn more is to visit the [documentation](/DOCS.md).  
-Happy coding!
+Happy coding! :)
+___
+[Previous: Deploying](deploy.md)  
