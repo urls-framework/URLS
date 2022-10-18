@@ -23,5 +23,6 @@ This guide will walk you through a complete implementaion of URLS. You will be m
 13. [Case Sensitivity](cs.md)
 14. [Redirects](redirects.md)
 15. [Passing Variables](vars.md)
+16. [Conclusion](conclusion.md)
 ___
 [Next: Project Setup](setup.md)
