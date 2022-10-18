@@ -57,7 +57,7 @@ This is a harder way to nest, however it can help you organize your files better
    ex. $urls->path('blog/', 'blog-home.php', true);
    */
    include 'urls/Urls.php';
-   Urls::$base = '/urlsblog/';
+   Urls::$base = '/';
    
    $urls = new Urls;
    $urls->path('/', 'templates/home.php', true);
