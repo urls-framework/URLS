@@ -1,6 +1,7 @@
 <picture>
     <img alt="Output" src="/examples/static/logo.png">
 </picture>
+
 # URLS Framework - Take control of the address bar!
 
 ## Why do you need it?
