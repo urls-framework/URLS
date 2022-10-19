@@ -1,7 +1,6 @@
-/*<picture>
+<picture>
     <img alt="Output" src="/examples/static/logo.png">
-</picture>/*
-![URLS logo](/examples/static/logo.png)
+</picture>
 
 # URLS Framework - Take control of the address bar!
 
