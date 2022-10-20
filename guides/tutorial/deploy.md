@@ -52,8 +52,7 @@ The final step to building our blog is deploying it on a web server. URLS makes 
    RewriteRule ^settings\.php$ - [L]
    # --URLS ADD_COND BEGIN--
    # --URLS ADD_COND END--
-   RewriteCond %{REQUEST_FILENAME} !-d [OR]
-   RewriteCond %{REQUEST_FILENAME} !-f [OR]
+   RewriteCond %{REQUEST_FILENAME} -d [OR]
    RewriteCond %{REQUEST_FILENAME} \.php$
    RewriteRule . /urlsblog/settings.php [L]
    RewriteRule ^$ /urlsblog/settings.php [L]
@@ -72,8 +71,7 @@ The final step to building our blog is deploying it on a web server. URLS makes 
    RewriteRule ^settings\.php$ - [L]
    # --URLS ADD_COND BEGIN--
    # --URLS ADD_COND END--
-   RewriteCond %{REQUEST_FILENAME} !-d [OR]
-   RewriteCond %{REQUEST_FILENAME} !-f [OR]
+   RewriteCond %{REQUEST_FILENAME} -d [OR]
    RewriteCond %{REQUEST_FILENAME} \.php$
    RewriteRule . /settings.php [L]
    RewriteRule ^$ /settings.php [L]
