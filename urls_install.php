@@ -61,7 +61,7 @@ if (isset($_POST['settings'])) {
 
 	// Download the update files
 	$updateFilePath = $dir.'/UrlsUpdate.zip';
-	file_put_contents($updateFilePath, file_get_contents('https://raw.githubusercontent.com/urls-framework/URLS/2.0.0/update_files/UrlsUpdate.zip?'.mt_rand()));
+	file_put_contents($updateFilePath, file_get_contents('https://raw.githubusercontent.com/urls-framework/URLS/main/update_files/UrlsUpdate.zip?'.mt_rand()));
 
 	// Extract the zip folder
 	$zip = new ZipArchive;
