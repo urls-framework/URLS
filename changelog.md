@@ -15,3 +15,5 @@
 * Fixed an error with the `.htaccess` file.
 ## Version 2.0.2 - 10-20-22
 * Fixed an error with the `.htaccess` file.
+## Version 2.0.3 - 4-12-23
+* Fixed an error involving the `Urls::$base` variable.
